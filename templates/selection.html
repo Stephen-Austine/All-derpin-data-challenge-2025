@@ -20,36 +20,48 @@
             </div>
         </div>
 
-        <br><br><br><br><br><br><br><br>
-
-
         <section class="row mx-5">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="card" style="background-color: rgba(255, 255, 255, 0.6);">
                     <div class="card-body">
                 <h3>
                     Malawi's very own early warning prediction system
                 </h3>
-                <p style="font-size: large;">
-                    Forecast Malawi's climate and gain valuable insights and solutions on future events and anticipate potential challenges.
-                    <br>
-                    This system is designed to provide accurate and timely forecasts, empowering communities to make informed decisions and take proactive measures.
-                    <br>
-                    By leveraging advanced data analytics and machine learning, Forecast Malawi aims to enhance resilience and preparedness in the face of climate variability.
-                </p>
                 <br>
-                <div class="d-flex-justify-content-between">
-                    <button class="btn btn-primary mx-4" onclick="location.href='/forecast'">
-                        Try it out - Forecast Malawi
-                    </button>
-                    <button class="btn btn-outline-primary" onclick="location.href='/selection'">
-                        Select a specific state
-                    </button>
-                </div>
+                <p style="font-size: large;">
+                    <h5>
+                        Select a region to view forecasts
+                    </h5>
+                </p>
+                <form action="/selection" method="post">
+                    <select name="region" id="" class="form-control mb-3">
+                        <option value="#" disabled selected>Select a region</option>
+                        <option value="north">Northern Region</option>
+                        <option value="central">Central Region</option>
+                        <option value="south">Southern Region</option>
+                    </select>
+                    <br>
+                    <center>
+                        <button class="btn btn-primary mx-4" onclick="location.href='/forecastselection'">
+                            View Forecast
+                        </button>
+                    </center>
+                </form>
+                <br>
+                <center>
+                    <div class="d-flex-justify-content-between">
+                        <button class="btn btn-outline-primary" onclick="location.href='/forecast'">
+                            Try it out - Forecast Malawi
+                        </button>
+
+                        <button class="btn btn-outline-primary" onclick="location.href='/'">
+                            Back to Home
+                        </button>
                     </div>
-                </div>
+                </center>
+
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-5"></div>
         </section>
 
 
