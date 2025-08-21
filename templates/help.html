@@ -13,15 +13,18 @@
             <h1>
                 Malawi Forecasts
             </h1>
+
             <div class="d-flex justify-content-between">
-                <button class="btn btn-sm btn-outline-primary mx-3" onclick="location.href='/about'">ABOUT</button>
-                <button class="btn btn-sm btn-outline-primary mx-3" disabled>HELP</button>
+                <button class="btn btn-outline-primary mx-3" onclick="location.href='/about'">ABOUT</button>
+                <button class="btn btn-outline-primary" onclick="location.href='/help'">HELP</button>
             </div>
         </div>
 
         <section class="row mx-5">
+            <div class="col-md-3"></div>
+
             <div class="col-md-6">
-                <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.85);">
+                <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7);">
                     <div class="card-body">
                         <h3>How to Use This Website</h3>
                         <ul class="list-group list-group-flush mb-3">
@@ -50,27 +53,22 @@
                         <p>
                             If you have questions or encounter issues, please contact our support team or check the FAQ section (if available).
                         </p>
+                        <center>
+                            <div class="d-flex-justify-content-between">
+                                <button class="btn btn-primary mx-4" onclick="location.href='/forecast'">
+                                    Try it out - Forecast Malawi
+                                </button>
+                                <button class="btn btn-outline-primary" onclick="location.href='/'">
+                                    Back to Home
+                                </button>
+                            </div>
+                        </center>
                     </div>
                 </div>
-                <div class="card" style="background-color: rgba(255, 255, 255, 0.85);">
-                    <div class="card-body">
-                        <h3>About Malawi Forecasts</h3>
-                        <p>
-                            Malawi Forecasts is an early warning prediction system designed to provide accurate and timely climate forecasts for Malawi. 
-                            Our goal is to empower communities, organizations, and decision-makers with actionable insights to anticipate and respond to climate-related challenges.
-                        </p>
-                        <ul>
-                            <li>Leverages advanced data analytics and machine learning</li>
-                            <li>Supports resilience and preparedness for climate variability</li>
-                            <li>Accessible and user-friendly for all Malawians</li>
-                        </ul>
-                        <p>
-                            By using this platform, you contribute to a more informed and resilient Malawi.
-                        </p>
-                    </div>
-                </div>
+
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-3"></div>
+
         </section>
     </div>
 </body>
